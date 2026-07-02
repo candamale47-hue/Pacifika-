@@ -1,0 +1,24 @@
+# Pacifika Wear - Fly.io Configuration
+# Region: Sydney (syd) for Australian customers
+# Run: flyctl deploy
+
+app = 'pacifika-wear'
+primary_region = 'syd'
+
+[build]
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[mounts]]
+  source = 'pacifika_data'
+  destination = '/app/db'
+
+[[mounts]]
+  source = 'pacifika_uploads'
+  destination = '/app/public/uploads'
