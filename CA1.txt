@@ -1,0 +1,2 @@
+cd pacifika-wear
+flyctl deploy --no-cache
