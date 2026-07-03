@@ -1,0 +1,4 @@
+cd pacifika-wear
+git add .
+git commit -m "Fix Dockerfile for Fly.io deploy"
+git push origin main
