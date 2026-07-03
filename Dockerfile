@@ -11,9 +11,6 @@ WORKDIR /app
 # Install build tools needed for native modules
 RUN apk add --no-cache python3 make g++
 
-# Update npm to fix "Exit handler never called" bug in npm 10.8.2
-RUN npm install -g npm@latest
-
 # Copy dependency files first (for layer caching)
 COPY package.json package-lock.json* ./
 RUN npm ci --omit=dev --ignore-scripts 2>/dev/null || npm install --omit=dev --ignore-scripts
@@ -24,9 +21,6 @@ WORKDIR /app
 
 # Install build tools
 RUN apk add --no-cache python3 make g++
-
-# Update npm to fix "Exit handler never called" bug in npm 10.8.2
-RUN npm install -g npm@latest
 
 # Copy all source files
 COPY . .
