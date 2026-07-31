@@ -1,0 +1,12 @@
+/** Preview/dummy products shown only when a category has no real DB products. */
+export const seedProducts = [
+    { id: -1, name: "Art Mens Shirt", slug: "preview-art-mens", description: "Pacific Island fashion", price: 45, category: "shirts", images: ["/placeholder-shirt.jpg"], stock: 24, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -2, name: "Tribal Mask Mens Shirt", slug: "preview-tribal-mask", description: "Pacific Island fashion", price: 45, category: "shirts", images: ["/placeholder-shirt.jpg"], stock: 24, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -3, name: "Summer Break Mens Shirt", slug: "preview-summer-mens", description: "Pacific Island fashion", price: 45, category: "shirts", images: ["/placeholder-shirt.jpg"], stock: 18, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -4, name: "Mens Shirt Tapa", slug: "preview-mens-tapa", description: "Pacific Island fashion", price: 35, category: "shirts", images: ["/placeholder-shirt.jpg"], stock: 12, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -5, name: "Summer Break Ladies Dress", slug: "preview-summer-ladies", description: "Pacific Island fashion", price: 45, category: "dresses", images: ["/placeholder-dress.jpg"], stock: 14, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -6, name: "Tribal Mask Ladies Top", slug: "preview-tribal-ladies", description: "Pacific Island fashion", price: 40, category: "dresses", images: ["/placeholder-dress.jpg"], stock: 14, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -7, name: "Art Ladies Dress", slug: "preview-art-ladies", description: "Pacific Island fashion", price: 45, category: "dresses", images: ["/placeholder-dress.jpg"], stock: 14, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -8, name: "Art Boys Shirt", slug: "preview-art-boys", description: "Pacific Island fashion", price: 30, category: "kids", images: ["/placeholder-kids.jpg"], stock: 12, isActive: true, salePrice: null as number | null, badge: null as string | null },
+    { id: -9, name: "Art Girls Dress", slug: "preview-art-girls", description: "Pacific Island fashion", price: 30, category: "kids", images: ["/placeholder-kids.jpg"], stock: 12, isActive: true, salePrice: null as number | null, badge: null as string | null },
+];
